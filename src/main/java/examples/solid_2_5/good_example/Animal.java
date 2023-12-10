@@ -4,10 +4,10 @@ public class Animal {
 
     public String name;
 
-    public static AnimalService animalService = new AnimalService();
+    public static AnimalService animalServiceImpl = new AnimalServiceImpl();
 
     public Animal(String name) {
         this.name = name;
-        animalService.addAnimal(this);
+        animalServiceImpl.addAnimal(this);
     }
 }
